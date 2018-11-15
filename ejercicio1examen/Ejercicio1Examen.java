@@ -17,6 +17,7 @@ public class Ejercicio1Examen {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        factorial un = new factorial();
         
     }
     

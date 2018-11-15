@@ -12,22 +12,22 @@ package ejercicio1examen;
 public class factorial {
 
     public factorial() {
-        int j;
-        int f;
+        int numero;//rename de j a numero
+        int calculoFactorial;//rename de n a calculoFactorial(alamacena el calculo del factorial del numero
 
-        j = 8;
+        numero = 8;
 
         int i;
-        if (j == 0) {
-            f = 1;
+        if (numero == 0) {
+            calculoFactorial = 1;
         } else {
-            f = 1;
-            for (i = j; i >= 1; i--) {
-                f = f * i;
+            calculoFactorial = 1;
+            for (i = numero; i >= 1; i--) {
+                calculoFactorial = calculoFactorial * i;
             }
         }
 
-        System.out.println(f);
+        System.out.println(calculoFactorial);
 
     }
 
