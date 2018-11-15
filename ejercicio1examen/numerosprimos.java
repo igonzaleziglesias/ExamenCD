@@ -11,14 +11,14 @@ package ejercicio1examen;
  */
 public class numerosprimos {
 
-    public static boolean p = false;
+    public static boolean condicion = false;//cambio de nombre de p a condicion
 
     public numerosprimos(String arg[]) {
 
-        int numDigitos = 0;
+        int numeroDigitos = 0;//cambio de nombre de numDigitos a numeroDigitos
         int ndigitos = 0;
-        numDigitos = Integer.parseInt(arg[0]);
-        if (numDigitos <= 0) {
+        numeroDigitos = Integer.parseInt(arg[0]);
+        if (numeroDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
 
@@ -34,12 +34,12 @@ public class numerosprimos {
 
             ndigitos = contador;
 
-            if (ndigitos == numDigitos) {
+            if (ndigitos == numeroDigitos) {
                 if (i < 4) {
-                    p = true;
+                    condicion = true;
                 } else {
                     if (i % 2 == 0) {
-                        p = false;
+                        condicion = false;
                     } else {
                         int contador1 = 0;
                         int i1 = 1;
@@ -59,12 +59,12 @@ public class numerosprimos {
                         }
 
                         if (contador1 == 1) {
-                            p = true;
+                            condicion = true;
                         }
                     }
                 }
 
-                if (p == true) {
+                if (condicion == true) {
                     System.out.println(i);
                 }
             }
